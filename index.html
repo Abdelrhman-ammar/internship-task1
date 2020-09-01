@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title>NETEL</title>
+        <link rel="stylesheet" href="./index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+    <div class="main-div">
+
+        <div class="back-div">
+
+            <div class="slideshow-container" id="slideshow-container-id">
+
+                <div class="slide active">
+                    <img class="slide-img" id="img-slide" src="./img1.jpeg">
+                    <h2>Welcom to Onetel Design Studio</h2>
+                </div>
+
+                <div class="slide active">
+                    <img class="slide-img" id="img-slide" src="./img2.jpeg">
+                    <h2>Welcom to Onetel Design Studio</h2>
+                </div>
+
+                <div class="slide active">
+                    <img class="slide-img" id="img-slide" src="./img3.jpeg">
+                    <h2>Welcom to Onetel Design Studio</h2>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="front-div">
+
+            <nav id="mynav">
+                <a href="#" class="logo">
+                    <span class="point"></span>
+                    <span class="logo-name">NETEL</span>
+                </a>
+
+                <a class="nav-link icon" onclick="mobileResp()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link active" href="#">Portfolio</a>
+                <a class="nav-link" href="#">About Us</a>
+                <a class="nav-link" href="#">Home</a>
+
+            </nav>
+
+            <div class="background">
+                <a class="prev" id="prev-btn" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" id="next-btn" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+            <div class="feature-container">
+
+                <div class="feature feature1">
+                    <div class="div-icon">
+                        <i class="fa fa-laptop" aria-hidden="true"></i>
+                    </div>
+                    <h4 class="feature-h">Responsive</h4>
+                    <p class="feature-p">Lorem Ipsum is simply dummy text of 
+                        the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's 
+                        standard dummy text ever since the 1500s
+                    </p>
+                </div>
+
+                <div class="feature feature2">
+                    <div class="div-icon">
+                        <i class="fa fa-mobile" aria-hidden="true"></i>
+                    </div>
+                    <h4 class="feature-h">Easy To Use</h4>
+                    <p class="feature-p">Lorem Ipsum is simply dummy text of 
+                        the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's 
+                        standard dummy text ever since the 1500s
+                    </p>
+                </div>
+
+                <div class="feature feature3">
+                    <div class="div-icon">
+                        <i class="fa fa-life-ring" aria-hidden="true"></i>
+                    </div>
+                    <h4 class="feature-h">Quick Support</h4>
+                    <p class="feature-p">Lorem Ipsum is simply dummy text of 
+                        the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's 
+                        standard dummy text ever since the 1500s
+                    </p>
+                </div>
+            </div>
+
+            <div class="about">
+                <img src="./imglap.jpeg" alt="photo">
+                <div class="about-content">
+                    <h3 class="about-h">Startuo Business</h3>
+                    <p class="about-p">Lorem Ipsum is simply dummy text of 
+                        the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's 
+                        standard dummy text ever since the 1500s
+                    </p>
+                    <button class="about-btn">Learn More</button>
+                </div>
+            </div>
+
+            <div class="projects">
+                <h2 class="projects-h">Recent Projects</h2>
+                <p class="projects-p">Lorem Ipsum is simply dummy text of 
+                    the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's 
+                    standard dummy text ever since the 1500s
+                </p>
+
+                <div id="mylightbox" class="lightbox">
+
+                    <span class="close cursor" onclick="closeLightBox()">&times;</span>
+                    <div class="lightbox-container">
+
+                        <div class="my-slide">
+                            <img id="light-box-img" src="./imglap.jpeg" style="width:100%">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projects-img-main-container">
+
+                    <div class="projects-big-img-container">
+                        <img class="Img" onclick="openLightBox();currentSlide(1)" src="./img1.jpeg" alt="photo">
+                        <img class="Img" onclick="openLightBox();currentSlide(2)" src="./imglap.jpeg" alt="photo">
+                        <img class="Img" onclick="openLightBox();currentSlide(3)" src="./imglap.jpeg" alt="photo">
+                    </div>
+                    <div class="projects-small-img-container">
+                        <img class="Img" onclick="openLightBox();currentSlide(4)" src="./imglap.jpeg" alt="photo">
+                        <img class="Img" onclick="openLightBox();currentSlide(5)" src="./imglap.jpeg" alt="photo">
+                        <img class="Img" onclick="openLightBox();currentSlide(6)" src="./imglap.jpeg" alt="photo">
+                        <img class="Img" onclick="openLightBox();currentSlide(6)" src="./imglap.jpeg" alt="photo">
+                    </div>
+                </div>
+
+                <button class="projects-btn">View More</button>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+    </body>
+</html>
