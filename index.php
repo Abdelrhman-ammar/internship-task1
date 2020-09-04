@@ -1,1 +1,2 @@
-<?php require_once "./index.html";
+<?php
+    header("location: ./resources/index.html");
